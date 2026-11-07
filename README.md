@@ -1,5 +1,9 @@
 # PDNet
 
+<p align="center">
+  <img src="PDNet.png" alt="PDNet workflow banner" width="100%">
+</p>
+
 **Paper:** [PDNet: Exploring Pruning and Distillation for Real-Time Worker Activity Recognition in Industrial Assembly](https://doi.org/10.5220/0014477200004084)
 
 ## Abstract
@@ -32,3 +36,10 @@ In this work, we address real-time fine-grained human activity recognition (HAR)
 - **SlowFast / PySlowFast:** [official implementation](https://github.com/facebookresearch/SlowFast).
 - **SlowFast paper:** [SlowFast Networks for Video Recognition](https://arxiv.org/abs/1812.03982).
 - **Related implementation:** [Master-Thesis-Resource-Efficient-PySlowFast](https://github.com/mscmalekbaba/Master-Thesis-Resource-Efficient-PySlowFast).
+
+## Project resources
+
+- **Dataset:** MECCANO
+- **Core framework:** SlowFast / PySlowFast
+- **Research code:** thesis implementation repository above
+- **Paper:** DOI and entry above
