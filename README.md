@@ -1,40 +1,52 @@
 # PDNet
 
-A public project repository for the paper available on arXiv:
+**Project resources for the paper:** [arXiv:2610.26491](https://arxiv.org/abs/2610.26491)
 
-- arXiv: https://arxiv.org/abs/2610.26491
+PDNet explores resource-efficient video-based recognition of worker activities in industrial assembly settings. This repository is the project home for the paper, its external dataset and framework references, and the documentation needed to organize code and reproducibility materials as they are released.
 
-## Overview
+## Abstract
 
-PDNet is a resource-efficient video understanding framework for real-time recognition of worker activities in industrial assembly settings. The project builds on SlowFast-style spatiotemporal modeling and uses the MECCANO dataset for egocentric industrial activity recognition.
+Recognizing worker activities from video can support understanding of industrial assembly workflows, but video models can be expensive to train and run. PDNet investigates a resource-efficient approach to this problem, using spatiotemporal video modeling based on the SlowFast framework and the MECCANO egocentric industrial-activity dataset. The project focuses on the practical balance between recognition capability and computational cost, and documents model-efficiency techniques including structured pruning and knowledge distillation. This repository links the paper to its dataset and framework resources and provides a place to publish implementation details, evaluation protocols, and results. Please consult the paper for the precise method, experimental setup, and reported findings.
 
-## Paper
+> This is a repository summary, not a verbatim abstract. See the [paper](https://arxiv.org/abs/2610.26491) for the authors' official abstract and results.
 
-- arXiv: https://arxiv.org/abs/2610.26491
-- Project page: TBD
+## Paper and citation
 
-## Used dataset
+- **Paper:** [arXiv:2610.26491](https://arxiv.org/abs/2610.26491)
+- **Citation metadata:** [`CITATION.cff`](CITATION.cff)
 
-- MECCANO dataset: https://github.com/fpv-iplab/MECCANO
+BibTeX starter entry (replace the author and title placeholders with the exact arXiv metadata before citing):
 
-The MECCANO dataset is an egocentric video dataset focused on human-object interactions in industrial-like scenarios, with annotations for actions, objects, and multimodal signals.
+```bibtex
+@misc{pdnet2026,
+  title         = {PDNet},
+  author        = {{AUTHORS}},
+  year          = {2026},
+  eprint        = {2610.26491},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2610.26491}
+}
+```
 
-## Core framework / model references
+## Data and methods
 
-- SlowFast: https://github.com/facebookresearch/slowfast
-- PySlowFast: https://github.com/facebookresearch/slowfast
-- Related thesis / implementation repo: https://github.com/mscmalekbaba/Master-Thesis-Resource-Efficient-PySlowFast
+- **MECCANO dataset:** [official dataset repository](https://github.com/fpv-iplab/MECCANO). Obtain the data from its maintainers and follow their terms. This repository does not redistribute dataset files.
+- **SlowFast / PySlowFast:** [official implementation](https://github.com/facebookresearch/SlowFast).
+- **SlowFast paper:** [SlowFast Networks for Video Recognition](https://arxiv.org/abs/1812.03982).
+- **Related implementation:** [Master-Thesis-Resource-Efficient-PySlowFast](https://github.com/mscmalekbaba/Master-Thesis-Resource-Efficient-PySlowFast).
 
-## Relevant resources
+See [`data/`](data/README.md), [`methods/`](methods/README.md), and [`reproducibility/`](reproducibility/README.md) for how project materials are organized.
 
-- SlowFast paper: https://arxiv.org/abs/1812.03982
-- MECCANO project / dataset repository: https://github.com/fpv-iplab/MECCANO
-- Resource-efficient video understanding / industrial HAR references: see the thesis repo above and related benchmark links in the project documentation
+## Repository structure
 
-## Repository purpose
+```text
+.
+├── data/             Dataset references and setup notes (no dataset files)
+├── methods/          Model, framework, and method references
+├── paper/            Paper links and publication materials
+└── reproducibility/  Environment, evaluation, and experiment documentation
+```
 
-This repository serves as a landing page for the paper, links to the main data/model resources, and a place to share code, experiments, models, and documentation as the project evolves.
+## Status
 
-## Notes
-
-This is the initial public version of the repo. More project-specific files, benchmark results, and reproducibility instructions can be added here as the work matures.
+This repository currently serves as a project landing page and resource index. Implementation code, detailed instructions, and experimental artifacts will be added when ready. For now, use the linked paper and related implementation repository as the authoritative sources; do not infer missing hyperparameters or results from this overview.
