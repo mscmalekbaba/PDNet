@@ -2,11 +2,9 @@
 
 **Paper:** [PDNet: Exploring Pruning and Distillation for Real-Time Worker Activity Recognition in Industrial Assembly](https://doi.org/10.5220/0014477200004084)
 
-PDNet explores resource-efficient video-based recognition of worker activities in industrial assembly. The paper investigates structured pruning and knowledge distillation to reduce model cost while retaining activity-recognition capability, using the MECCANO dataset and SlowFast-based video modeling.
-
 ## Abstract
 
-Worker activity recognition from video can support understanding of industrial assembly workflows, but video models can be costly to deploy in real time. PDNet explores pruning and distillation for real-time worker activity recognition in industrial assembly. The work studies structured pruning to reduce model parameters and distillation-based retraining to recover performance in a compact model. Experiments use the MECCANO egocentric industrial-activity dataset and SlowFast-based video modeling. See the [published paper](https://doi.org/10.5220/0014477200004084) for the official abstract, complete method, experimental setup, and results.
+In this work, we address real-time fine-grained human activity recognition (HAR) in industrial assembly and introduce PDNet, a new framework that jointly exploits structured pruning and knowledge distillation for 3D convolutional networks. We start by training a 3D-CNN backbone in a supervised manner. Then, PDNet applies channel-wise structured pruning to obtain a more compact network. In the third step, our method is optimized using knowledge distillation from the large unpruned teacher to recover accuracy lost due to pruning. On the challenging MECCANO dataset with an X3D-M backbone, the pruned model without distillation reaches a Top-1 accuracy of 25.54 %, while PDNet raises this to 39.46 %, with only 6.90 MB model size and 3.78 GFLOPs. These results show that distillation within PDNet is highly effective in restoring pruned model performance and highlight its high potential for resource-constrained HAR in industrial assembly.
 
 ## Paper and citation
 
@@ -34,5 +32,3 @@ Worker activity recognition from video can support understanding of industrial a
 - **SlowFast / PySlowFast:** [official implementation](https://github.com/facebookresearch/SlowFast).
 - **SlowFast paper:** [SlowFast Networks for Video Recognition](https://arxiv.org/abs/1812.03982).
 - **Related implementation:** [Master-Thesis-Resource-Efficient-PySlowFast](https://github.com/mscmalekbaba/Master-Thesis-Resource-Efficient-PySlowFast).
-
-See [`data/`](data/README.md), [`methods/`](methods/README.md), and [`reproducibility/`](reproducibility/README.md) for dataset, method, and reproduction notes.
