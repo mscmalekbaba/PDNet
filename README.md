@@ -1,30 +1,30 @@
 # PDNet
 
-<p align="center">
-  <img src="assets/pdnet-banner.svg" alt="PDNet workflow: base model training, structured pruning, and distillation-based retraining" width="100%">
-</p>
+**Paper:** [PDNet: Exploring Pruning and Distillation for Real-Time Worker Activity Recognition in Industrial Assembly](https://doi.org/10.5220/0014477200004084)
 
-**Paper:** [Resource-efficient Deep Learning for Real-time Recognition of Worker Activities During Industrial Assembly](https://arxiv.org/abs/2610.26491)
-
-PDNet explores resource-efficient video-based recognition of worker activities in industrial assembly settings. It builds on spatiotemporal video modeling with SlowFast and the MECCANO egocentric industrial-activity dataset, studying the trade-off between recognition capability and computational cost through structured pruning and knowledge distillation.
+PDNet explores resource-efficient video-based recognition of worker activities in industrial assembly. The paper investigates structured pruning and knowledge distillation to reduce model cost while retaining activity-recognition capability, using the MECCANO dataset and SlowFast-based video modeling.
 
 ## Abstract
 
-Recognizing worker activities from video can support understanding of industrial assembly workflows, but video models can be expensive to train and run. PDNet investigates a resource-efficient approach to this problem, using spatiotemporal video modeling based on the SlowFast framework and the MECCANO egocentric industrial-activity dataset. The work focuses on balancing recognition capability with computational cost, including structured pruning and distillation-based retraining. This repository links the paper to its dataset and framework resources. See the [paper](https://arxiv.org/abs/2610.26491) for the official abstract, complete method, experimental setup, and reported results.
+Worker activity recognition from video can support understanding of industrial assembly workflows, but video models can be costly to deploy in real time. PDNet explores pruning and distillation for real-time worker activity recognition in industrial assembly. The work studies structured pruning to reduce model parameters and distillation-based retraining to recover performance in a compact model. Experiments use the MECCANO egocentric industrial-activity dataset and SlowFast-based video modeling. See the [published paper](https://doi.org/10.5220/0014477200004084) for the official abstract, complete method, experimental setup, and results.
 
 ## Paper and citation
 
-- **Paper:** [arXiv:2610.26491](https://arxiv.org/abs/2610.26491)
+- **Title:** PDNet: Exploring Pruning and Distillation for Real-Time Worker Activity Recognition in Industrial Assembly
+- **Proceedings:** [Proceedings of the 21st International Conference on Computer Vision Theory and Applications](https://doi.org/10.5220/0014477200004084), pp. 624–630, 2026
+- **DOI:** [10.5220/0014477200004084](https://doi.org/10.5220/0014477200004084)
 - **Citation metadata:** [`CITATION.cff`](CITATION.cff)
 
 ```bibtex
-@article{baba2026resourceefficient,
-  title         = {Resource-efficient Deep Learning for Real-time Recognition of Worker Activities During Industrial Assembly},
-  author        = {Baba, Malek},
-  journal       = {arXiv preprint arXiv:2610.26491},
-  year          = {2026},
-  doi           = {10.48550/arXiv.2610.26491},
-  url           = {https://arxiv.org/abs/2610.26491}
+@inproceedings{Baba_2026,
+  title     = {PDNet: Exploring Pruning and Distillation for Real-Time Worker Activity Recognition in Industrial Assembly},
+  url       = {https://doi.org/10.5220/0014477200004084},
+  doi       = {10.5220/0014477200004084},
+  booktitle = {Proceedings of the 21st International Conference on Computer Vision Theory and Applications},
+  publisher = {SCITEPRESS - Science and Technology Publications},
+  author    = {Baba, Malek and Thiyakesan Ponbagavathi, Thinesh and Roitberg, Alina},
+  year      = {2026},
+  pages     = {624--630}
 }
 ```
 

@@ -1,9 +1,14 @@
 cff-version: 1.2.0
-message: "If you use this work, please cite the arXiv paper."
-title: "Resource-efficient Deep Learning for Real-time Recognition of Worker Activities During Industrial Assembly"
+message: "If you use this work, please cite the conference paper."
+title: "PDNet: Exploring Pruning and Distillation for Real-Time Worker Activity Recognition in Industrial Assembly"
 authors:
   - family-names: Baba
     given-names: Malek
+  - family-names: Thiyakesan Ponbagavathi
+    given-names: Thinesh
+  - family-names: Roitberg
+    given-names: Alina
 year: 2026
+doi: "10.5220/0014477200004084"
 repository-code: "https://github.com/mscmalekbaba/PDNet"
-url: "https://arxiv.org/abs/2610.26491"
+url: "https://doi.org/10.5220/0014477200004084"
