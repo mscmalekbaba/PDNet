@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="520" viewBox="0 0 2200 520" role="img" aria-labelledby="title desc">
+  <title id="title">PDNet resource-efficient activity recognition workflow</title>
+  <desc id="desc">Three stages: train a base video model, estimate importance and prune parameters, then retrain the pruned model using teacher-student distillation.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#315ea8"/></marker>
+    <style>
+      .head{font:700 29px sans-serif;fill:#172033}.stage{font:700 24px sans-serif;fill:#172033}.label{font:600 19px sans-serif;fill:#172033}.small{font:500 16px sans-serif;fill:#334155}.panel{fill:#fff;stroke:#334155;stroke-width:2;stroke-dasharray:9 7}.model{fill:#cde8fa;stroke:#28466f;stroke-width:2}.box{fill:#d7e9c9;stroke:#28466f;stroke-width:2}.accent{fill:#f4c7a6;stroke:#28466f;stroke-width:2}.arrow{stroke:#315ea8;stroke-width:5;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="2200" height="520" fill="#f8fafc"/>
+  <g transform="translate(20 20)">
+    <rect class="panel" width="700" height="480" rx="12"/>
+    <rect x="0" y="0" width="700" height="70" rx="12" fill="#91acd9"/>
+    <text class="head" x="350" y="45" text-anchor="middle">Stage 1 · Base Model Training</text>
+    <text class="small" x="45" y="135">Sampled video frames</text>
+    <g transform="translate(45 160)"><rect width="135" height="72" rx="8" fill="#dbeafe" stroke="#64748b"/><path d="M20 52l28-28 25 22 17-17 26 23" fill="none" stroke="#4675b9" stroke-width="5"/><circle cx="42" cy="22" r="7" fill="#f59e0b"/><text class="small" x="68" y="100" text-anchor="middle">Video clips</text></g>
+    <path class="arrow" d="M205 198h70"/>
+    <path class="model" d="M300 150h145l55 50-55 50H300z"/><text class="label" x="390" y="192" text-anchor="middle">Base video</text><text class="label" x="390" y="220" text-anchor="middle">model</text>
+    <path class="arrow" d="M510 200h52"/><rect class="box" x="575" y="165" width="90" height="70" rx="12"/><text class="label" x="620" y="194" text-anchor="middle">Class</text><text class="label" x="620" y="218" text-anchor="middle">scores</text>
+    <text class="small" x="350" y="350" text-anchor="middle">Train the base activity-recognition model</text>
+  </g>
+  <g transform="translate(750 20)">
+    <rect class="panel" width="700" height="480" rx="12"/>
+    <rect x="0" y="0" width="700" height="70" rx="12" fill="#f1b487"/>
+    <text class="head" x="350" y="45" text-anchor="middle">Stage 2 · Structured Pruning</text>
+    <path class="model" d="M50 150h145l50 50-50 50H50z"/><text class="label" x="140" y="192" text-anchor="middle">Trained</text><text class="label" x="140" y="220" text-anchor="middle">base model</text>
+    <path class="arrow" d="M255 200h55"/><rect class="accent" x="325" y="140" width="190" height="120" rx="18"/><text class="label" x="420" y="185" text-anchor="middle">Importance scoring</text><text class="label" x="420" y="215" text-anchor="middle">and parameter</text><text class="label" x="420" y="243" text-anchor="middle">reduction</text>
+    <path class="arrow" d="M525 200h50"/><path class="model" d="M585 150h75l30 50-30 50h-75z"/><text class="label" x="622" y="192" text-anchor="middle">Pruned</text><text class="label" x="622" y="220" text-anchor="middle">model</text>
+    <text class="small" x="350" y="350" text-anchor="middle">Apply a selected pruning ratio to reduce model parameters</text>
+  </g>
+  <g transform="translate(1480 20)">
+    <rect class="panel" width="700" height="480" rx="12"/>
+    <rect x="0" y="0" width="700" height="70" rx="12" fill="#a9cf91"/>
+    <text class="head" x="350" y="45" text-anchor="middle">Stage 3 · Distillation Retraining</text>
+    <rect class="model" x="48" y="125" width="205" height="90" rx="10"/><text class="label" x="150" y="162" text-anchor="middle">Teacher model</text><text class="small" x="150" y="190" text-anchor="middle">soft targets</text>
+    <rect class="model" x="48" y="270" width="205" height="90" rx="10"/><text class="label" x="150" y="307" text-anchor="middle">Pruned student</text><text class="small" x="150" y="335" text-anchor="middle">learns from teacher</text>
+    <path class="arrow" d="M270 170c100-40 100 130 0 145"/><path class="arrow" d="M270 315h95"/><rect class="box" x="385" y="230" width="265" height="85" rx="14"/><text class="label" x="517" y="266" text-anchor="middle">Efficient activity</text><text class="label" x="517" y="294" text-anchor="middle">recognition model</text>
+    <text class="small" x="350" y="410" text-anchor="middle">Retrain the pruned model using distillation and labels</text>
+  </g>
+</svg>

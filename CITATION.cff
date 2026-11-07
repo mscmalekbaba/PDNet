@@ -1,15 +1,9 @@
 cff-version: 1.2.0
-message: >-
-  If you use this work, please cite the arXiv paper. Replace the author and title
-  placeholders with the exact metadata shown on the arXiv record before using
-  this file for formal citation.
-title: PDNet
+message: "If you use this work, please cite the arXiv paper."
+title: "Resource-efficient Deep Learning for Real-time Recognition of Worker Activities During Industrial Assembly"
 authors:
-  - name: AUTHORS - replace with the paper's author list
-  
-abstract: >-
-  Resource-efficient video-based worker activity recognition for industrial
-  assembly. See https://arxiv.org/abs/2610.26491 for the official title,
-  abstract, author list, and results.
-repository-code: https://github.com/mscmalekbaba/PDNet
-url: https://arxiv.org/abs/2610.26491
+  - family-names: Baba
+    given-names: Malek
+year: 2026
+repository-code: "https://github.com/mscmalekbaba/PDNet"
+url: "https://arxiv.org/abs/2610.26491"
